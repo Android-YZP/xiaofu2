@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/skin_off_bg"
+        >
+
+        <RelativeLayout
+            android:id="@+id/photolayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="450px"
+                android:layout_height="480px"
+                android:src="@drawable/wea_bg_shu"
+                android:layout_marginTop="178px"
+                android:layout_marginLeft="90px"
+                />
+
+        </RelativeLayout>
+        <ScrollView
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/photolayout"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/x50"
+            android:layout_marginLeft="@dimen/x40"
+            >
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/goodsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x10"
+            android:text="-------------"
+            />
+        <TextView
+            android:id="@+id/goodsprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/string_gray3"
+            android:textSize="@dimen/x8"
+            android:text="350.00 / 125ml"
+            android:layout_marginTop="@dimen/x10"
+            />
+        <TextView
+            android:id="@+id/goodDescribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/string_gray3"
+            android:textSize="@dimen/x8"
+            android:text="-----------------------"
+            android:layout_marginTop="@dimen/x10"
+            />
+        <ImageView
+            android:layout_below="@+id/layout1"
+            android:id="@+id/setting_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/skin_pop_line"
+            android:layout_marginTop="@dimen/x10"
+            />
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/x10"-->
+            <!--android:text="主要成分"-->
+            <!--android:layout_marginTop="@dimen/x10"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/string_gray3"-->
+            <!--android:textSize="@dimen/x8"-->
+            <!--android:text="三硅氧烷 / poloxamer184 /水"-->
+            <!--/>-->
+        <!--<ImageView-->
+            <!--android:layout_below="@+id/layout1"-->
+            <!--android:id="@+id/setting_line2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="@dimen/x10"-->
+            <!--android:src="@drawable/skin_pop_line" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x10"
+            android:text="如何使用"
+            android:layout_marginTop="@dimen/x10"
+            />
+
+        <TextView
+            android:id="@+id/goodUseMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/string_gray3"
+            android:textSize="@dimen/x8"
+            android:text="---------------------------------------"
+            android:layout_marginTop="10px"
+            />
+
+    </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/close_layout"
+        android:layout_width="@dimen/x24"
+        android:layout_height="@dimen/y17"
+        android:layout_centerVertical="true"
+        android:background="@drawable/close_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

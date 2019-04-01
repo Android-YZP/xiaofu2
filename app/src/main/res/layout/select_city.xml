@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x178"
+    android:layout_height="@dimen/y192"
+    android:background="@drawable/rect">
+
+    <ListView
+        android:fadingEdge="none"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:layout_marginBottom="@dimen/y10"
+        android:layout_marginTop="@dimen/y10"
+        android:layout_marginLeft="@dimen/x2"
+        android:id="@+id/city_listview"
+        android:layout_width="@dimen/x152"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_word"
+        android:layout_width="@dimen/x36"
+        android:layout_height="@dimen/y25"
+        android:layout_centerInParent="true"
+        android:background="#44000000"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/x9"
+        android:visibility="gone" />
+
+    <com.lanyou.yuanmirror.control.IndexView
+        android:layout_marginTop="@dimen/y8"
+        android:layout_marginRight="@dimen/x8"
+        android:layout_marginBottom="@dimen/y8"
+        android:id="@+id/iv_words"
+        android:layout_width="@dimen/x5"
+        android:layout_height="@dimen/y175"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

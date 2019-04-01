@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/weight_bg_2_new"
+    android:id="@+id/relayout"
+    >
+
+
+    <TextView
+        android:id="@+id/camera_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:text="全脸检测"
+        android:layout_marginTop="@dimen/y10"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y85"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/y10"
+        android:background="@drawable/skin_frame_icon"
+        android:layout_below="@+id/camera_title"
+        >
+    <LinearLayout
+        android:id="@+id/camera_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/skin_off_banner_3"
+        android:padding="10dp"
+        android:orientation="vertical"
+        />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/camera_takePhoto_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout5"
+        android:layout_marginTop="@dimen/x12"
+        >
+
+        <ImageView
+            android:id="@+id/camera_takePhoto_img"
+            android:layout_width="@dimen/x15"
+            android:layout_height="@dimen/x25"
+            android:src="@drawable/skin_face_icon_1"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/camera_takePhoto_tv"
+            />
+        <TextView
+            android:id="@+id/camera_takePhoto_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="请拍摄额头(1/5)"
+            android:textSize="14sp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/x9"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/camera_takePhoto_layout"
+        android:layout_centerHorizontal="true"
+        >
+        <ImageView
+            android:id="@+id/camera_takePhoto_btn"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:src="@drawable/skin_photograph_btn_n"
+            android:layout_centerHorizontal="true"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignTop="@+id/camera_takePhoto_btn"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/y9"
+            android:layout_toRightOf="@+id/camera_takePhoto_btn"
+            >
+
+            <ImageView
+                android:id="@+id/camera_change_Img"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:src="@drawable/skin_change_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/x6"
+                />
+
+            <TextView
+                android:id="@+id/camera_change_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="切换基底层"
+                android:textSize="16sp"
+                android:textColor="#a7b1c6"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+        <Button
+            android:id="@+id/close_layout"
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y17"
+            android:background="@drawable/close_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/x9"
+            android:layout_marginRight="@dimen/x9"
+            />
+
+
+</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_shoot_sta_password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:soundEffectsEnabled="false"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="35dp"
+            android:background="#ffffff"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="输入WiFi密码连接设备" />
+
+
+                <TextView
+                    android:id="@+id/tv_shoot_sta_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="25dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="WiFi密码" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_shoot_sta_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:hint="若无密码请直接点击OK"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:singleLine="true"
+                        android:textColor="#252525"
+                        android:textColorHint="#b5b8c1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shoot_sta_password_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="11dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/tv_shoot_sta_password_error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="密码错误" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="19dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_shoot_sta_password_connect"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:soundEffectsEnabled="false"
+                        android:visibility="gone">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:singleLine="true"
+                            android:text="连接中" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_shoot_sta_commit"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="确定" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

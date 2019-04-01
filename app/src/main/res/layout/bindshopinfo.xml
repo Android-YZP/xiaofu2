@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weight_bg_2_new"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32px"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/x10"
+        android:text="门店登录"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/x10"
+        android:src="@drawable/skin_pop_line"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:textColor="@color/string_gray6"
+        android:layout_marginTop="@dimen/x20"
+        android:text="账号"
+        android:layout_below="@+id/line1"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/select_company"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x30"
+        android:layout_marginLeft="@dimen/y12"
+        android:layout_marginRight="@dimen/y12"
+        android:background="@drawable/btn_store_n"
+        android:layout_marginTop="@dimen/x5"
+        android:layout_below="@+id/title2"
+        android:layout_centerHorizontal="true"
+        >
+    <EditText
+        android:id="@+id/select_company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#242932"
+        android:textSize="30px"
+        android:hint="账号"
+        android:layout_centerVertical="true"
+        android:gravity="center|left"
+        android:layout_marginLeft="@dimen/x6"
+        android:singleLine="true"
+        android:background="@null"
+    />
+
+        <!--<ImageView-->
+            <!--android:layout_width="@dimen/x8"-->
+            <!--android:layout_height="@dimen/x8"-->
+            <!--android:src="@drawable/icon_store"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="@dimen/x6"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--/>-->
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:textColor="@color/string_gray6"
+        android:layout_marginTop="@dimen/x20"
+        android:text="密码"
+        android:layout_below="@+id/select_company"
+        android:layout_centerHorizontal="true"
+        />
+    <RelativeLayout
+        android:id="@+id/select_shop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x30"
+        android:layout_marginLeft="@dimen/y12"
+        android:layout_marginRight="@dimen/y12"
+        android:background="@drawable/btn_store_n"
+        android:layout_marginTop="@dimen/x5"
+        android:layout_below="@+id/title3"
+        android:layout_centerHorizontal="true"
+        >
+        <EditText
+            android:id="@+id/select_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#242932"
+            android:textSize="30px"
+            android:hint="密码"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x6"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:background="@null"
+            android:password="true"
+            />
+
+        <!--<ImageView-->
+            <!--android:layout_width="@dimen/x8"-->
+            <!--android:layout_height="@dimen/x8"-->
+            <!--android:src="@drawable/icon_store"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="@dimen/x6"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--/>-->
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/x20"
+        android:src="@drawable/skin_pop_line"
+        android:layout_below="@+id/select_shop"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/btn_bind"
+        android:layout_width="@dimen/x90"
+        android:layout_height="@dimen/x25"
+        android:layout_below="@+id/line3"
+        android:background="@drawable/btnbg7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y9"
+        />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/close_icon"
+        android:layout_marginBottom="6dp"
+        />
+
+</RelativeLayout>
+
+</RelativeLayout>

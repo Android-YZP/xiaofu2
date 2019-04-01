@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/wea_bg_shu"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y55"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+
+        <ImageView
+            android:layout_width="52px"
+            android:layout_height="48px"
+            android:src="@mipmap/icon_volume"
+            />
+
+        <!--<SeekBar-->
+            <!--android:id="@+id/setting_progress"-->
+            <!--android:layout_width="340px"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:maxHeight="26px"-->
+            <!--android:progressDrawable="@drawable/layer_progress"-->
+            <!--android:thumb="@drawable/shape_circle"-->
+            <!--android:max="100"-->
+            <!--android:paddingLeft="9dp"-->
+            <!--android:paddingRight="9dp"-->
+            <!--android:focusable="false"-->
+            <!--android:clickable="true"-->
+            <!--android:thumbOffset="5.0dip"-->
+            <!--android:progress="0"-->
+            <!--android:layout_marginLeft="28px"-->
+            <!--/>-->
+
+        <SeekBar android:id="@+id/setting_progress"
+            android:paddingLeft="9.0dip"
+            android:paddingRight="9.0dip"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_width="188.0dip"
+            android:layout_height="wrap_content"
+            android:maxHeight="26px"
+            android:max="100"
+            android:progressDrawable="@drawable/playback_seekbar_style"
+            android:minHeight="26px"
+            android:thumb="@drawable/shape_circle"
+            android:thumbOffset="5.0dip"
+            android:layout_centerHorizontal="true"
+            android:progress="0"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/setting_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/skin_pop_line" />
+
+
+    <Button
+        android:id="@+id/settingg_usinghelp"
+        android:layout_width="@dimen/x130"
+        android:layout_height="@dimen/x24"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="@dimen/y8"
+        android:background="@drawable/btnbg4"
+        />
+
+    <Button
+        android:id="@+id/settin_bind"
+        android:layout_width="@dimen/x130"
+        android:layout_height="@dimen/x24"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#999999"
+        android:layout_marginTop="@dimen/y8"
+        android:background="@drawable/btnbg6"
+        />
+
+    <Button
+        android:id="@+id/settin_checkupdate"
+        android:layout_width="@dimen/x130"
+        android:layout_height="@dimen/x24"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#999999"
+        android:layout_marginTop="@dimen/y8"
+        android:background="@drawable/btnbg5"
+        />
+
+    <TextView
+        android:id="@+id/setting_version"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:text="版本号\n元镜 Yuan Mirror 1.1.4"
+        android:textSize="12sp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/y18"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/close_layout"
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y17"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/close_icon" />
+    </RelativeLayout>
+
+
+</LinearLayout>

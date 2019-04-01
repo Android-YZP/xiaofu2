@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/product_btn_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/product_discount"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="@dimen/y45"
+            android:layout_height="@dimen/x40"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/skin_off_btn_s"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/product_introduce"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="@dimen/y45"
+            android:layout_height="@dimen/x40"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="@dimen/y33"
+            android:background="@drawable/skin_product_btn_n"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/product_gride_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/skin_off_bg"
+        android:layout_toRightOf="@+id/product_btn_layout"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        >
+       <android.support.v4.widget.SwipeRefreshLayout
+           android:id="@+id/swipe_refresh_layout"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+        <cn.company1075.xiaofu.utils.RefreshRecyclerView
+            android:id="@+id/product_gride_layout_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </cn.company1075.xiaofu.utils.RefreshRecyclerView>
+       </android.support.v4.widget.SwipeRefreshLayout>
+        <Button
+            android:id="@+id/gride_close_layout"
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y17"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/close_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="1dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/product_bannner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/skin_off_bg"
+        android:layout_toRightOf="@+id/product_btn_layout"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/product_layout_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        >
+    </android.support.v7.widget.RecyclerView>
+    <cn.company1075.xiaofu.utils.xiaofu.BannerIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        app:selectColor="@color/pm_5"
+        app:unselectedColor="@color/white"
+        android:layout_alignParentBottom="true"
+        app:radius="3dp"
+        android:layout_marginBottom="12dp"
+        app:space="10dp"/>
+
+        <Button
+            android:id="@+id/close_layout"
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y17"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/close_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="1dp"
+            />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

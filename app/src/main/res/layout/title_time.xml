@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x63"
+    android:layout_height="@dimen/y32"
+    android:orientation="vertical"
+    android:background="@drawable/top_bg_time"
+    android:id="@+id/title_time">
+
+    <TextClock
+        android:textColor="@color/string_gray5"
+        android:layout_marginTop="@dimen/y1"
+        android:id="@+id/textClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="HH:mm"
+        android:format24Hour="HH:mm"
+        android:textSize="@dimen/x20"
+        android:textStyle="bold"
+        android:textIsSelectable="false"
+        android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/y1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_time_line"
+            />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/y1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextClock
+            android:layout_marginLeft="@dimen/x6"
+            android:textColor="@color/string_gray5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="EEEE"
+            android:format24Hour="EEEE"
+            android:lines="1"
+            android:textSize="@dimen/x5"/>
+
+        <TextClock
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/x5"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/date_yue"
+            android:textColor="@color/string_gray5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="M/dd"
+            android:format24Hour="M/dd"
+            android:lines="1"
+            android:textSize="@dimen/x5"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

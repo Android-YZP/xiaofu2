@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">xiaofu</string>
+    <string name="title_xiaofu">测肤</string>
+    <string name="title_product">产品</string>
+    <string name="title_setting">设置</string>
+    <string name="xiaofu_contact">连接设备</string>
+    <string name="xiaofu_open">开始检测</string>
+    <string name="part_forehead">请拍摄额头(1/5)</string>
+    <string name="part_leftface">请拍摄左脸(2/5)</string>
+    <string name="part_rightface">请拍摄右脸(3/5)</string>
+    <string name="part_nose">请拍摄鼻子(4/5)</string>
+    <string name="part_chin">请拍摄下巴(5/5)</string>
+    <string name="xiaofu_commit">提交</string>
+    <string name="xiaofu_open_2">开始检测肤质</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="@dimen/y5"
+        android:id="@+id/weather_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="@dimen/x8"
+        android:textColor="@color/white2"></TextView>
+
+    <ImageView
+        android:layout_marginTop="@dimen/y5"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/weather_type"
+        android:layout_width="@dimen/x14"
+        android:layout_height="@dimen/y10"></ImageView>
+
+    <TextView
+        android:layout_marginTop="@dimen/y5"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/weather_wendu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="@dimen/x8"
+        android:textColor="@color/white2"/>
+</RelativeLayout>

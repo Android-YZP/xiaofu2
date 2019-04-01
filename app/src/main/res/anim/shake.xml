@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+//仿ios APP抖动效果
+    <rotate android:toDegrees="2"
+        android:repeatMode="reverse"
+        android:repeatCount="infinite"
+        android:pivotY="50%"
+        android:pivotX="50%"
+        android:fromDegrees="0.8"
+        android:duration="150"></rotate>
+</set>

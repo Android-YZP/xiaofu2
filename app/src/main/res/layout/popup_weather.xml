@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weight_bg_2_new"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:background="@drawable/wea_1_new"
+        >
+
+        <TextView
+            android:id="@+id/city_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/x12"
+            android:layout_marginTop="@dimen/y2"
+            android:text="城市"
+            android:drawableLeft="@drawable/top_wea_1"
+            android:drawablePadding="@dimen/y4"
+            android:textColor="@color/string_gray5"
+            android:textSize="@dimen/x14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="@dimen/y19"
+            android:background="@drawable/wea_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y22"
+            >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <!--天气状态-->
+            <TextView
+                android:id="@+id/weather_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x13"
+                android:text="--"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x9" />
+
+            <!--温度-->
+            <TextView
+                android:id="@+id/weather_wendu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x12"
+                android:layout_marginTop="@dimen/y6"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/string_gray5"
+                android:textSize="@dimen/x30"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/today_min_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x12"
+                android:layout_marginTop="@dimen/y30"
+                android:text="--"
+                android:textColor="@color/string_gray5"
+                android:textSize="@dimen/x9" />
+
+            <TextView
+                android:id="@+id/wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x12"
+                android:layout_marginTop="@dimen/y40"
+                android:textColor="@color/string_gray5"
+                android:textSize="@dimen/x9" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/today_weather_type"
+            android:layout_width="@dimen/x54"
+            android:layout_height="@dimen/y38"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"></ImageView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/weather_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x24"
+        android:fadingEdge="none"
+        android:layout_weight="1"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/close_layout"
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y17"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/close_icon" />
+    </RelativeLayout>
+
+</LinearLayout>
